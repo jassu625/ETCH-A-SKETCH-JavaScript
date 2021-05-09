@@ -41,10 +41,10 @@ function clearGrid(container) {
 
 function changeSize() {
   do {
-    let size = prompt("Enter new size<100");
-    size = parseInt(size);
+    let newSize = prompt("Enter new size<100");
+    size = parseInt(newSize);
   } while (size > 100 || size < 1);
   const container = document.querySelector("div.container");
   clearGrid(container);
-  createGrid(parseInt(size));
+  createGrid(size); 
 }
